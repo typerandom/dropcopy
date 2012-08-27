@@ -17,12 +17,6 @@ Upload a file directly to your dropbox in one line. Installs using APT (N/A yet)
     
 =======================
 
-##### Copy a file to the root directory of your Dropbox. Will prompt for username and password.
-
-    dropcopy [path of file to copy]
-    
-=======================
-
 ##### Copy a file to a specific directory in your Dropbox. Will prompt for username and password.
 
     dropcopy -src [path of file to copy] -dst [dropbox path]
@@ -43,5 +37,28 @@ Upload a file directly to your dropbox in one line. Installs using APT (N/A yet)
 
 ##### Copy a file to the root directory of your Dropbox. Loading username and password from a config file.
 
-    dropcopy -conf /etc/dropcopy/auth.conf -src [path of file to copy]
+    dropcopy -conf [path of config file] -src [path of file to copy]
 
+=======================
+
+## Examples
+
+    dropcopy ~/awesome-file-in-the-house.zip
+
+=======================
+
+    dropcopy -src ~/filez/awezum-file.txt -dst /awezum-file123.txt
+    
+=======================
+
+    dropcopy -src ~/filez/awezum-file.txt -dst /my-dropbox-textfiles/that_i_like/super_awesome/awezum-file123.txt --force
+
+=======================
+
+    dropcopy -usr catsnapper123 -psw OHMAHSECRETPSW999 -src ~/awesome-file.zip
+
+=======================
+
+    dropcopy -conf /etc/dropcopy/auth.conf -src ~/awesome-file.zip
+
+=======================
