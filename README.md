@@ -11,7 +11,7 @@ Upload a file directly to your dropbox in one line. Installs using APT (N/A yet)
 
 =======================
 
-#### Copy a file to the root directory in your Dropbox. Will prompt for username and password.
+##### Copy a file to the root directory in your Dropbox. Will prompt for username and password.
 
     dropcopy [path of file to copy]
     
